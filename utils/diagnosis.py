@@ -12,7 +12,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Vector que se obtiene del frontend
-values = np.array([4, 1, 1, 1, 1, 1, 1, 1, 4, 4, 1])
+values = [4, 1, 1, 1, 1, 1, 1, 1, 4, 4, 1] 
 
 def get_diagnosis(values):
     """
@@ -24,6 +24,7 @@ def get_diagnosis(values):
         hiper[pos]: an integer as diagnostic
     """
     # Procesamiento para calcular el elemento a leer a partir del vector
+    values = np.array(values)
     t = np.linspace(36,40,4)
     q = np.linspace(0,10,4)
     cuatros = np.zeros((11))
@@ -40,8 +41,4 @@ def get_diagnosis(values):
         fid.close()
 
         # Diagnóstico
-        return hiper[pos]
-
-# just for testing
-# print(get_diagnosis(values)) # uncomment this line to test function
-
+        return int(hiper[pos])
