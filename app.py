@@ -8,14 +8,14 @@ def diagnosis():
     try:
         values = request.json['values']
         if(len(values) == 11):
-            print(values)
-            # diagnosis = get_diagnosis(values)
+            diagnosis = get_diagnosis(values)
         else: 
             raise Exception("A list of 11 values is expected")
 
     except NameError:
         return "Property values not found in request", 404
-    except TypeError:
+    except TypeError as err:
+        print(err)
         return "Values should be a list", 400
     except Exception:
         return Exception, 400 
