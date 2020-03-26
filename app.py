@@ -1,6 +1,9 @@
 from flask import Flask, request, abort
 from utils.diagnosis import get_diagnosis
+from flask_cors import CORS
+
 app = Flask(__name__)
+cors = CORS(app)
 
 # A welcome message to test our server
 @app.route('/')
