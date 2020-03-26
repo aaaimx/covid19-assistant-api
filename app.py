@@ -2,6 +2,11 @@ from flask import Flask, request, abort
 from utils.diagnosis import get_diagnosis
 app = Flask(__name__)
 
+# A welcome message to test our server
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
+
 @app.route('/diagnosis', methods = ['POST'])
 def diagnosis():
     diagnosis = 0
@@ -26,6 +31,7 @@ def diagnosis():
 @app.errorhandler(404)
 def page_not_found(error):
     return 'Not found', 404
-
-if __name__ == "__main__":
-    app.run(port = 3000, debug = True)
+    
+if __name__ == '__main__':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
