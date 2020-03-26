@@ -15,48 +15,36 @@
 
 # COVID-19 Assistant API
 
-API to process  symptoms then diagnostic COVID-19. This is a template for organization repositories, set your own stuff.
+API to process  symptoms then diagnostic COVID-19.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites 📋
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+- Python 3.6>
+- Pipenv, virtualenv or venv
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+install project dependencies
 ```
-Give the example
+pip install -r requirements.txt
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 
 ## Deployment 📦
 
-Add additional notes about how to deploy this on a live system
+start server:
+
+```
+python app.py
+```
+
+Open in browser http://127.0.0.1:3000/
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Web development one drop at a time
 
 ## Contributing
 
@@ -66,33 +54,27 @@ Please read [CONTRIBUTING.md](https://www.aaaimx.org/cod) for details on our cod
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Future work 🚀
+<!-- ## Future work 🚀
+-   -->
 
 ## Contribuitors ✒
-- **Raul Novelo** - _Initial work_ - [@RaulNovelo](https://github.com/RaulNovelo)
+- **Adolfo Álvarez** - _Architecture_ - [@RaulNovelo](https://github.com/RaulNovelo)
+- **Raúl Novelo** - _Maintainer_ - [@alvarez98](https://github.com/alvarez98)
+- **Mauricio Orozco** - _Hiper file_ - [@alvarez98](https://github.com/alvarez98)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors]() who participated in this project.
 
-## Credits
-- **A template to make good README.md** - _Base template_ - [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+<!-- ## Credits
+- **A template to make good README.md** - _Base template_ - [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) -->
 
-## Referencias
-
-1. Bradley, T. (2013) [El Hacker Cívico: Civic-Minded Techies Gain Sway With Government in Mexico and Beyond](http://www.huffingtonpost.com/theresa-bradley/el-hacker-civico-how-civi_b_4334088.html). *The Huffington Post*.
-2. Bracy, C. (2014) [Why Good Hackers Make Good Citizens](https://www.youtube.com/watch?v=QeAGu40vZzI).
-3. Codeando México. (2015) [Los hackers cívicos mexicanos](https://www.fayerwayer.com/2015/01/los-hackers-civicos-mexicanos/). *FayerWayer*.
-4. Goldstein, B., Dyson, L. (2013) [Beyond Transparency: Open Data and the Future of Civic Innovation](http://beyondtransparency.org).
-5. Barry, L. (2016) [vTaiwan: Public Participation Methods on the Cyberpunk Frontier of Democracy](https://civichall.org/civicist/vtaiwan-democracy-frontier). *Civicist*.
-6. Swartz, A. (2008) [Open Access Guerrilla Manifesto](https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt).
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Diagnostic testing for COVID-19 is critical to tracking the virus, understanding
+epidemiology, informing case management, and to suppressing transmission
 
 Made with ❤️ by [AAAIMX](https://github.com/aaaimx) 😊
