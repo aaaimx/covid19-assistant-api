@@ -4,11 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-autopep8 = "*"
 
 [packages]
-numpy = "*"
-flask = "*"
+click = "==7.1.1"
+gunicorn = "==20.0.4"
+itsdangerous = "==1.1.0"
+numpy = "==1.18.2"
+python-decouple = "==3.3"
+Flask = "==1.1.1"
+Jinja2 = "==2.11.1"
+MarkupSafe = "==1.1.1"
+Werkzeug = "==1.0.0"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
