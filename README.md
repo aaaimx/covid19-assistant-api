@@ -13,9 +13,9 @@
 </p>
 <!-- end banner -->
 
-# COVID-19 Assistant API
+# RESTful API for COVID-19 Screening Assistant
 
-API to process  symptoms then diagnostic COVID-19.
+RESTful API for screening of different respiratory medical conditions, particularly COVID-19, allergies, common cold and respiratory infections based on fuzzy logic.
 
 ## Getting Started
 
@@ -57,10 +57,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 <!-- ## Future work 🚀
 -   -->
 
-## Contribuitors ✒
+## Contributors ✒
 - **Adolfo Álvarez** - _Architecture_ - [@RaulNovelo](https://github.com/RaulNovelo)
 - **Raúl Novelo** - _Maintainer_ - [@alvarez98](https://github.com/alvarez98)
-- **Mauricio Orozco** - _Hiper file_ - [@alvarez98](https://github.com/alvarez98)
+- **Mauricio Orozco** - _Hiper file_ - [@maorca421](https://github.com/maorca421)
 
 See also the list of [contributors]() who participated in this project.
 
