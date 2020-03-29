@@ -36,7 +36,7 @@ def get_diagnosis(values):
     pos = int(sum((values - 1) * cuatros) + 1) - 1
 
     # Lectura del archivo
-    with open(os.path.join(BASE_DIR, 'utils/hiper.txt'),'r') as fid:
+    with open(os.path.join(BASE_DIR, 'hiper.txt'),'r') as fid:
         hiper = fid.read()
         fid.close()
 

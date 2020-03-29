@@ -7,7 +7,6 @@ from random import random
 
 # project imports
 from .models import *
-from project.scrapy_api import scrapyd
 
 # celery imports
 from celery.decorators import task

@@ -85,6 +85,3 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-# connect scrapyd service
-SCRAPY_URI = os.environ.get('SCRAPY_URI', 'http://0.0.0.0:6800')

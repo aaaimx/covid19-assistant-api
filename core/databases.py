@@ -5,7 +5,7 @@ import os
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgres_sql.psycopg'
+        'ENGINE': 'django.db.backends.mysql'
     }
 }
 
