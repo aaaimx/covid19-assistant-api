@@ -23,6 +23,11 @@ from django.conf.urls import include, url
 from rest_framework import routers
 from main.views import *
 
+admin.site.site_header = "COVID-19 Screening Assistant"
+admin.site.index_title = "Welcome to Dashboard"
+admin.site.site_title = "AAAIMX"
+admin.site.site_url = "https://www.aaaimx.org/covid19-assistant/"
+
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r"diagnosis", DiagnosticViewSet)
