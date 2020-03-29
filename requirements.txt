@@ -39,6 +39,7 @@ kombu==3.0.37
 lxml==4.4.2
 MarkupSafe==1.1.1
 monotonic==1.5
+mysqlclient==1.4.6
 numpy==1.18.2
 parsel==1.5.2
 Protego==0.1.16
