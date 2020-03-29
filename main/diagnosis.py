@@ -8,8 +8,10 @@ Created on Tue Mar 24 12:28:18 2020
 """
 import numpy as np
 import os
+from django.conf import settings
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+diseases = ['', 'ALERGIA', 'COVID-19',
+            'INFECCIÓN RESPIRATORIA', 'RESFRIADO']
 
 # Vector que se obtiene del frontend
 values = [4, 1, 1, 1, 1, 1, 1, 1, 4, 4, 1] 
@@ -36,9 +38,10 @@ def get_diagnosis(values):
     pos = int(sum((values - 1) * cuatros) + 1) - 1
 
     # Lectura del archivo
-    with open(os.path.join(BASE_DIR, 'utils/hiper.txt'),'r') as fid:
+    with open(os.path.join(settings.BASE_DIR, 'main/hiper.txt'), 'r') as fid:
         hiper = fid.read()
         fid.close()
 
         # Diagnóstico
-        return int(hiper[pos])
+        d = int(hiper[pos])
+        return d, diseases[d]
