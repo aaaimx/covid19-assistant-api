@@ -4,8 +4,11 @@ from datetime import datetime
 
 # Create your models here.
 class Diagnostic(models.Model):
-    result = models.IntegerField(default=0, blank=True, null=True)
-    disease = models.CharField(default="", blank=True, null=True, max_length=20)
+    diagnosis = models.IntegerField(default=0, blank=True, null=True)
+    values = models.CharField(
+        default="", blank=True, null=True, max_length=11)
+    disease = models.CharField(
+        default="", blank=True, null=True, max_length=20)
     created_at = models.DateTimeField(default=datetime.now, blank=True, null=True)
 
 

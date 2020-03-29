@@ -31,15 +31,3 @@ def send_message(event, data):
 # Tasks
 # ===================================================
 
-# decorador scheduler
-@periodic_task(run_every=(crontab()), name="my_periodic", ignore_result=False)
-def my_periodic():
-    pass
-
-
-@task(name="my_task")
-def my_task():
-    pass
-        
-        
-

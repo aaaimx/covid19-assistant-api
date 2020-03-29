@@ -25,9 +25,9 @@ from main.views import *
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
-# router.register(r"reports", ReportViewSet)
+router.register(r"diagnosis", DiagnosticViewSet)
 
 urlpatterns = [
-    path('', admin.site.urls),
-    url(r"^api/", include(router.urls)),
+    url(r"^", include(router.urls)),
+    path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

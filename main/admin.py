@@ -4,9 +4,9 @@ from django.contrib import admin
 from .models import *
 
 # Register your models here.
-# @admin.register(Report)
-# class AdminReport(admin.ModelAdmin):
-#     list_display = ('id','label', 'country', 'created_at', 'source')
-#     list_filter = ()
+@admin.register(Diagnostic)
+class AdminDiagnostic(admin.ModelAdmin):
+    list_display = ('id','diagnosis', 'disease', 'values', 'created_at')
+    list_filter = ()
 
 
