@@ -8,7 +8,7 @@ class Diagnostic(models.Model):
     values = models.CharField(
         default="", blank=True, null=True, max_length=11)
     disease = models.CharField(
-        default="", blank=True, null=True, max_length=20)
+        default="", blank=True, null=True, max_length=50)
     created_at = models.DateTimeField(default=datetime.now, blank=True, null=True)
 
 
