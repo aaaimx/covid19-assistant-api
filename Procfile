@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn -k eventlet -w 1 --threads=5 project.wsgi:application --log-level=debug
