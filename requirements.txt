@@ -24,7 +24,7 @@ django-timezone-field==3.1
 djangorestframework==3.11.0
 dnspython==1.16.0
 enum-compat==0.0.2
-eventlet==0.24.1
+eventlet==0.31.0
 Flask==1.1.1
 Flask-Cors==3.0.8
 greenlet==0.4.15
