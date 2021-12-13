@@ -36,7 +36,7 @@ incremental==17.5.0
 itsdangerous==1.1.0
 Jinja2==2.11.1
 kombu==3.0.37
-lxml==4.4.2
+lxml==4.6.5
 MarkupSafe==1.1.1
 monotonic==1.5
 mysqlclient==1.4.6
